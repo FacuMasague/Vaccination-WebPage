@@ -1,0 +1,40 @@
+.main_index{
+    height: 90vh;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 32%, rgba(1,70,116,1) 47%, rgba(2,111,183,1) 60%, rgba(3,145,239,1) 74%, rgba(0,153,255,1) 89%);
+}
+
+.main_button{
+    display: grid;
+    grid-template-columns: .85fr 1.3fr .85fr;
+    div{
+        height: 90vh;
+    }
+    .main_button__center{
+        ul{
+            padding: 0;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            a{
+                font-size: 1.25rem;
+                text-decoration: none;
+                color: white;
+                li{
+                    list-style: none;
+                    width: 100px;
+                    height: 70px;
+                    border: 2px solid white;
+                    border-radius: .5rem;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
