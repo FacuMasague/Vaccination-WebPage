@@ -8,7 +8,7 @@
 .main_index {
   height: 90vh;
   background: black;
-  background: radial-gradient(circle, black 0%, black 32%, #014674 47%, #026fb7 60%, #0391ef 74%, #0099ff 89%); }
+  background: radial-gradient(circle, black 0%, black 34%, #003558 56%, #004a7a 68%, #0066aa 78%, #0091f1 93%, #0099ff 100%); }
 
 .main_button {
   display: grid;
