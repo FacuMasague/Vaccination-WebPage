@@ -5,6 +5,15 @@
   .navbar .navbar-collapse .navbar-nav a {
     color: white; }
 
+footer {
+  height: 10vw;
+  background-color: darkblue; }
+  footer figure {
+    height: 100%;
+    text-align: center; }
+    footer figure img {
+      height: 100%; }
+
 .main_index {
   height: 90vh;
   background: black;
@@ -38,6 +47,27 @@
         justify-content: center;
         align-items: center; }
 
+.covid__box .covid__title {
+  text-align: center; }
+
+.covid__box .boxes {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .covid__box .boxes .boxTxt {
+    height: 100%;
+    background-color: #0088ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .covid__box .boxes .boxTxt p {
+      color: white;
+      text-align: center;
+      width: 70%; }
+  .covid__box .boxes .boxImg {
+    height: 100%; }
+
 @media (min-width: 992px) {
   /* Header */
   .navbar .navbar-collapse {
@@ -54,6 +84,19 @@
     flex-direction: row;
     justify-content: center; }
     .navbar .navbar-collapse .navbar-nav a {
+      text-align: center; } }
+
+@media (max-width: 857px) {
+  /* Covid */
+  .boxTxt p {
+    width: 100% !important; } }
+
+@media (max-width: 584px) {
+  /* Covid */
+  .boxes {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr !important; }
+    .boxes .boxImg img {
       text-align: center; } }
 
 @media (max-width: 575px) {
@@ -74,4 +117,11 @@
       .main_button__center ul a {
         font-size: 1rem; }
   .main_button__space {
-    display: none; } }
+    display: none; }
+  /* Footer */
+  footer {
+    height: 20vw; }
+    footer figure {
+      height: 100%; }
+      footer figure img {
+        height: 100%; } }

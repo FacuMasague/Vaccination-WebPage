@@ -32,6 +32,30 @@
     }
 }
 
+@media (max-width: 857px) {
+    /* Covid */
+    
+    .boxTxt{
+        p{
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 584px) {
+    /* Covid */
+
+    .boxes{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+        .boxImg{
+            img{
+                text-align: center;
+            }
+        }
+    }
+}
+
 @media (max-width: 575px) {
     /* Index */
 
@@ -61,4 +85,17 @@
     .main_button__space{
         display: none;
     }
+
+    /* Footer */
+
+    footer{
+        height: 20vw;
+        figure{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+
 }
