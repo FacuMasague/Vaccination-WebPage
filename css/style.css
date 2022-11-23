@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .navbar {
-  background-color: #1ed4fd; }
+  background-color: #1eabfd; }
   .navbar .container-fluid .navbar-brand {
     color: white; }
   .navbar .navbar-collapse .navbar-nav a {
@@ -48,14 +53,17 @@ footer {
         align-items: center; }
 
 .covid__box .covid__title {
-  text-align: center; }
+  text-align: center;
+  margin: 20px; }
 
 .covid__box .boxes {
-  height: 250px;
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
   .covid__box .boxes .boxTxt {
-    height: 100%;
+    width: 25vw;
+    height: 25vw;
     background-color: #0088ff;
     display: flex;
     flex-direction: row;
@@ -64,9 +72,32 @@ footer {
     .covid__box .boxes .boxTxt p {
       color: white;
       text-align: center;
-      width: 70%; }
+      font-size: 1.25rem;
+      width: 70%;
+      margin: 0 !important; }
   .covid__box .boxes .boxImg {
-    height: 100%; }
+    width: 25vw;
+    height: 25vw; }
+    .covid__box .boxes .boxImg img {
+      width: 100%;
+      height: 100%; }
+
+@media (max-width: 1510px) {
+  /* Covid */
+  .boxTxt {
+    width: 40vw !important;
+    height: 40vw !important; }
+    .boxTxt p {
+      font-size: 1.25rem; }
+  .boxImg {
+    width: 40vw !important;
+    height: 40vw !important; } }
+
+@media (max-width: 1000px) {
+  /* Covid */
+  .boxTxt p {
+    font-size: 1.25rem;
+    width: 100% !important; } }
 
 @media (min-width: 992px) {
   /* Header */
@@ -88,16 +119,39 @@ footer {
 
 @media (max-width: 857px) {
   /* Covid */
-  .boxTxt p {
-    width: 100% !important; } }
+  .boxTxt {
+    width: 50vw !important;
+    height: 50vw !important; }
+    .boxTxt p {
+      font-size: 1.25rem; }
+  .boxImg {
+    width: 50vw !important;
+    height: 50vw !important; } }
 
-@media (max-width: 584px) {
+@media (max-width: 666px) {
+  /* Covid */
+  .boxTxt p {
+    font-size: 1rem; } }
+
+@media (max-width: 652px) {
   /* Covid */
   .boxes {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr !important;
     grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr !important; }
-    .boxes .boxImg img {
-      text-align: center; } }
+    grid-template-areas: "boxTxt" "boxImg"; }
+    .boxes .boxTxt {
+      grid-area: boxTxt;
+      width: 75vw !important;
+      height: 75vw !important;
+      margin-left: 12.5vw; }
+      .boxes .boxTxt p {
+        font-size: 1.25rem; }
+    .boxes .boxImg {
+      grid-area: boxImg;
+      width: 75vw !important;
+      height: 75vw !important;
+      margin-left: 12.5vw; } }
 
 @media (max-width: 575px) {
   /* Index */
@@ -125,3 +179,23 @@ footer {
       height: 100%; }
       footer figure img {
         height: 100%; } }
+
+@media (max-width: 430px) {
+  /* Covid */
+  .boxes .boxTxt {
+    grid-area: boxTxt;
+    width: 100vw !important;
+    height: 100vw !important;
+    margin: 0; }
+    .boxes .boxTxt p {
+      font-size: 1.25rem; }
+  .boxes .boxImg {
+    grid-area: boxImg;
+    width: 100vw !important;
+    height: 100vw !important;
+    margin: 0; } }
+
+@media (max-width: 334px) {
+  /* Covid */
+  .boxes .boxTxt p {
+    font-size: 1rem !important; } }
