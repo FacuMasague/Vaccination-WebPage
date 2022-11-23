@@ -1,0 +1,43 @@
+.vaccines{
+    div{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        h2{
+            margin: 20px;
+        }
+        p{
+            width: 80vw;
+        }
+    }
+}
+
+.availableVaccines{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    div{
+        width: 275px;
+        height: 300px;
+        background-color: rgb(0, 136, 255);
+        border-radius: 2rem;
+        text-align: center;
+        margin: 20px;
+        h3{
+            color: white;
+            margin-top: 20px;
+        }
+        p{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin-left: 13.75px;
+        }
+    }
+}
