@@ -145,16 +145,6 @@
 
     /* Footer */
 
-    footer{
-        height: 20vw;
-        figure{
-            height: 100%;
-            img{
-                height: 100%;
-            }
-        }
-    }
-
 }
 
 @media (max-width: 430px) {
@@ -177,6 +167,8 @@
             margin: 0;
         }
     }
+
+    /* Footer */
 }
 
 @media (max-width: 334px) {
