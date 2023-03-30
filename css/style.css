@@ -4,12 +4,12 @@
   box-sizing: border-box; }
 
 main {
-  padding-top: 40px; }
+  padding-top: 60px; }
 
 header {
   position: fixed;
   width: 100%;
-  background-color: rgba(30, 171, 253, 0.144);
+  background-color: rgba(30, 171, 253, 0.555);
   backdrop-filter: blur(3.5px);
   z-index: 9999; }
 
@@ -149,6 +149,36 @@ footer {
       align-items: center;
       width: 90%;
       margin-left: 13.75px; }
+
+.main_why section h2 {
+  padding-left: 30px;
+  padding-right: 20px; }
+
+.main_why section div p {
+  padding-left: 30px;
+  padding-right: 20px; }
+
+.main_why section div .why_references {
+  padding: 0;
+  text-align: center;
+  font-size: 1.40rem;
+  font-weight: bold; }
+
+.main_why section div ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none; }
+  .main_why section div ul li a {
+    text-decoration: none; }
+
+.main_why section .show {
+  display: contents; }
+
+.main_why section .notShow {
+  display: none; }
 
 @media (max-width: 1510px) {
   /* Covid */
