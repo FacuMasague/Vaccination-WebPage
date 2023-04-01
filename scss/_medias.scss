@@ -95,6 +95,15 @@
     }
 }
 
+@media (max-width: 807px) {
+    /* Why */
+
+    .main_why__imp{
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    }
+}
+
 @media (max-width: 666px) {
     /* Covid */
     
@@ -172,7 +181,16 @@
         }
     }
 
-    /* Footer */
+    /* Why */
+
+    .main_why__imp{
+        grid-template-rows: 570px 570px 620px 450px 590px 460px;
+        section{
+            div{
+                width: 100vw;
+            }
+        }
+    }
 }
 
 @media (max-width: 334px) {
