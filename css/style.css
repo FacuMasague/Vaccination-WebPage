@@ -223,6 +223,16 @@ footer {
       .main_why__imp section div .notShow {
         display: none; }
 
+.where_main {
+  height: 85vh; }
+  .where_main h1 {
+    text-align: center; }
+  .where_main p {
+    font-size: 1.25rem;
+    text-align: center; }
+  .where_main h2 {
+    text-align: center; }
+
 @media (max-width: 1510px) {
   /* Covid */
   .boxTxt {
